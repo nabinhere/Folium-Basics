@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_44a0c85c71d141acadd91b649294cc66 {
+                #map_3d57779cc43d5bc9aaef8a0b38bdce7b {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,23 +35,22 @@
                 .leaflet-container { font-size: 1rem; }
             </style>
         
-    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
 </head>
 <body>
     
     
-            <div class="folium-map" id="map_44a0c85c71d141acadd91b649294cc66" ></div>
+            <div class="folium-map" id="map_3d57779cc43d5bc9aaef8a0b38bdce7b" ></div>
         
 </body>
 <script>
     
     
-            var map_44a0c85c71d141acadd91b649294cc66 = L.map(
-                "map_44a0c85c71d141acadd91b649294cc66",
+            var map_3d57779cc43d5bc9aaef8a0b38bdce7b = L.map(
+                "map_3d57779cc43d5bc9aaef8a0b38bdce7b",
                 {
-                    center: [27.620749568687554, 85.53959115295962],
+                    center: [51.5074, -0.1278],
                     crs: L.CRS.EPSG3857,
-                    zoom: 10,
+                    zoom: 15,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -61,19 +60,29 @@
 
         
     
-            var tile_layer_26770a5dd163f0431e673dfc1fc0efa3 = L.tileLayer(
+            var tile_layer_b30e3d150b5a04d4362bbe5259d68ab5 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_26770a5dd163f0431e673dfc1fc0efa3.addTo(map_44a0c85c71d141acadd91b649294cc66);
+            tile_layer_b30e3d150b5a04d4362bbe5259d68ab5.addTo(map_3d57779cc43d5bc9aaef8a0b38bdce7b);
         
     
-            ant_path_ecc1fcf93685ea64a8a953fedf6cec45 = L.polyline.antPath(
-              [[27.706173058804147, 85.31477135928425], [27.688524452521865, 85.33496315386105], [27.64942468399721, 85.32467366671976], [27.634837004993145, 85.48408478647924], [27.62078434559073, 85.5396654890737]],
-              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [2, 10], "dashOffset": null, "delay": 500, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "paused": false, "pulseColor": "orange", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-        ).addTo(map_44a0c85c71d141acadd91b649294cc66);
+            var poly_line_237c951478a69a175471e5ed72cae10b = L.polyline(
+                [[51.5074, -0.1278], [51.5113, -0.1175], [51.5136, -0.1124]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3d57779cc43d5bc9aaef8a0b38bdce7b);
+        
+    
+            var marker_cda33c5ef722cd881a7582a87417ab61 = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_3d57779cc43d5bc9aaef8a0b38bdce7b);
+        
+    
+        var custom_icon_2eb580a91b76acc3cdbf37086c5ef714 = L.icon({"iconSize": [20, 20], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Green_triangle.svg/220px-Green_triangle.svg.png"});
+        marker_cda33c5ef722cd881a7582a87417ab61.setIcon(custom_icon_2eb580a91b76acc3cdbf37086c5ef714);
         
 </script>
 </html>

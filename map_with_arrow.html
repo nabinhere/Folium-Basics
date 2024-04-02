@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_44a0c85c71d141acadd91b649294cc66 {
+                #map_24489df1c00ac6b89447f1f35da131cf {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,21 +35,20 @@
                 .leaflet-container { font-size: 1rem; }
             </style>
         
-    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
 </head>
 <body>
     
     
-            <div class="folium-map" id="map_44a0c85c71d141acadd91b649294cc66" ></div>
+            <div class="folium-map" id="map_24489df1c00ac6b89447f1f35da131cf" ></div>
         
 </body>
 <script>
     
     
-            var map_44a0c85c71d141acadd91b649294cc66 = L.map(
-                "map_44a0c85c71d141acadd91b649294cc66",
+            var map_24489df1c00ac6b89447f1f35da131cf = L.map(
+                "map_24489df1c00ac6b89447f1f35da131cf",
                 {
-                    center: [27.620749568687554, 85.53959115295962],
+                    center: [40.7128, -74.006],
                     crs: L.CRS.EPSG3857,
                     zoom: 10,
                     zoomControl: true,
@@ -61,19 +60,25 @@
 
         
     
-            var tile_layer_26770a5dd163f0431e673dfc1fc0efa3 = L.tileLayer(
+            var tile_layer_07c5c9968c7161e5f0f9013d61479034 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_26770a5dd163f0431e673dfc1fc0efa3.addTo(map_44a0c85c71d141acadd91b649294cc66);
+            tile_layer_07c5c9968c7161e5f0f9013d61479034.addTo(map_24489df1c00ac6b89447f1f35da131cf);
         
     
-            ant_path_ecc1fcf93685ea64a8a953fedf6cec45 = L.polyline.antPath(
-              [[27.706173058804147, 85.31477135928425], [27.688524452521865, 85.33496315386105], [27.64942468399721, 85.32467366671976], [27.634837004993145, 85.48408478647924], [27.62078434559073, 85.5396654890737]],
-              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [2, 10], "dashOffset": null, "delay": 500, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "paused": false, "pulseColor": "orange", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-        ).addTo(map_44a0c85c71d141acadd91b649294cc66);
+            var poly_line_09fbd5524a8c49ec351202d5dfce5022 = L.polyline(
+                [[40.7128, -74.006], [40.7306, -73.9352]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_24489df1c00ac6b89447f1f35da131cf);
+        
+    
+            var poly_line_b9247abfbb6055a8aa188bd58f03e4a0 = L.polyline(
+                [[40.7217, -73.97059999999999], [40.72100393200279, -73.97131797586536], [40.721973751340116, -73.97156180050102], [40.7217, -73.97059999999999]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_24489df1c00ac6b89447f1f35da131cf);
         
 </script>
 </html>
